@@ -1,0 +1,35 @@
+﻿<Window x:Class="LABA5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LABA5"
+        mc:Ignorable="d"
+        Title="Кофейный автомат" Height="500" Width="800">
+    <Grid Margin="0,0,10,-16">
+        <TextBox x:Name="textboxMoney" HorizontalAlignment="Left" Height="23" Margin="23,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ButtonAdd" Content="Внести средства" HorizontalAlignment="Left" Margin="23,65,0,0" VerticalAlignment="Top" Width="120" Click="ButtonAdd_Click"/>
+        <Label Content="Текущий баланс:" HorizontalAlignment="Left" Margin="186,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.654"/>
+        <Label x:Name="labelCurrentMoney" Content="" HorizontalAlignment="Left" Margin="293,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.211,0.269"/>
+        <Label Content="рублей" HorizontalAlignment="Left" Margin="336,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.654"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="247" Margin="23,128,0,0" Stroke="Black" VerticalAlignment="Top" Width="362"/>
+        <RadioButton x:Name="rbAmericano" Content="Американо" HorizontalAlignment="Left" Margin="50,174,0,0" VerticalAlignment="Top" Checked="RbAmericano_Checked"/>
+        <RadioButton x:Name="rbCapuccino" Content="Капуччино" HorizontalAlignment="Left" Margin="50,293,0,0" VerticalAlignment="Top" Checked="RbAmericano_Checked"  />
+        <RadioButton x:Name="ebChocolate" Content="Горячий шоколад" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Checked="RbAmericano_Checked" />
+        <RadioButton x:Name="rbEspresso" Content="Эспрeссо" HorizontalAlignment="Left" Margin="50,217,0,0" VerticalAlignment="Top" Checked="RbAmericano_Checked" />
+        <CheckBox x:Name="cbAddMilk" Content="Добавить молоко" HorizontalAlignment="Left" Margin="219,194,0,0" VerticalAlignment="Top" Checked="CbAddMilk_Checked" Unchecked="cbAddMilk_Unchecked"/>
+        <CheckBox x:Name="cbAddSugar" Content="Добавить сахар" HorizontalAlignment="Left" Margin="219,258,0,0" VerticalAlignment="Top" Checked="CbAddSugar_Checked" Unchecked="cbAddSugar_Unchecked"/>
+        <Button x:Name="buttonStart" Content="Начать приготовление" HorizontalAlignment="Left" Margin="219,345,0,0" VerticalAlignment="Top" Width="143" Click="buttonStart_Click"/>
+        <Label Content="Стоимость напитка:" HorizontalAlignment="Left" Margin="185,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,0.231"/>
+        <Label Content="рублей" HorizontalAlignment="Left" Margin="358,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.654"/>
+        <Label x:Name="labelCost" Content="" HorizontalAlignment="Left" Margin="315,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,0.231"/>
+        <Label Content="Ваша сдача:" HorizontalAlignment="Left" Margin="145,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,0.231"/>
+        <Label Content="рублей" HorizontalAlignment="Left" Margin="318,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.654"/>
+        <Label x:Name="labelCashBack" Content="" HorizontalAlignment="Left" Margin="275,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,0.231"/>
+        <Rectangle HorizontalAlignment="Left" Height="34" Margin="23,390,0,0" Stroke="Black" VerticalAlignment="Top" Width="361"/>
+        <Image x:Name="ImageBoxAmericano" HorizontalAlignment="Left" Height="245" Margin="490,162,0,0" VerticalAlignment="Top" Width="315" Source = "/americano.jpeg"/>
+        <Image x:Name="ImageBoxCapuccino" HorizontalAlignment="Left" Height="245" Margin="490,151,0,0" VerticalAlignment="Top" Width="315" Source="/capuccino.jpeg" />
+        <Image x:Name="ImageBoxChocolate" HorizontalAlignment="Left" Height="245" Margin="455,174,0,0" VerticalAlignment="Top" Width="315" Source = "/chocolate.jpg"/>
+        <Image x:Name="ImageBoxEspresso" HorizontalAlignment="Left" Height="245" Margin="455,151,0,0" VerticalAlignment="Top" Width="315" Source="/espresso.jpg" />
+    </Grid>
+</Window>
